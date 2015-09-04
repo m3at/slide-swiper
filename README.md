@@ -1,4 +1,4 @@
-*Work in progress*
+*Work in progress*  
 *TODO: make it work better with firefox*
 
 # Slide swiper
@@ -26,7 +26,7 @@ Use the `w` key to activate/desactivate this plugin.
 ## Thanks
 ---
 
-Inspired from the very similar: https://github.com/functino/reveal.js-wave-plugin
+Inspired from the very similar: https://github.com/functino/reveal.js-wave-plugin  
 Webcam-swiper library: https://github.com/iambrandonn/WebcamSwiper
 
 ## License
