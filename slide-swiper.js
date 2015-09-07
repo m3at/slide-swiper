@@ -1,16 +1,16 @@
 (function() {
-	// for the moment make it only possible to mvoe forward
-	// because it often misdetects the wave direction
 	var webcamSwipeEnabled = true;
 	document.getElementsByTagName("body")[0].addEventListener( 'webcamSwipeLeft',  function() {
 		if (webcamSwipeEnabled) {
 			Reveal.navigateNext();
-			// disable swiping for 1 second to avoid "double firing" of the event
 			webcamSwipeEnabled = false;
 			setTimeout(function(){ webcamSwipeEnabled = true}, 100);
 		}
 	});
-	/*
+	/*  --------------------------------------------------------------------------------
+	 *  Swiping left side is still shaky... need some tweaking of webcan-swiper first.
+	 *  Or a port to openCV would be even better. To consider
+	 *  --------------------------------------------------------------------------------
 	document.getElementsByTagName("body")[0].addEventListener( 'webcamSwipeRight',  function() {
 		if (webcamSwipeEnabled) {
 			Reveal.navigatePrev();
